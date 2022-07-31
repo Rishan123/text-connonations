@@ -1,4 +1,4 @@
-from ml.linear_algebra import Vector, dot
+from linear_algebra import Vector, dot
 
 def sum_of_squares(v: Vector) -> float:
     """Computes the sum of squared elements in v"""
@@ -24,7 +24,7 @@ def estimate_gradient(f: Callable[[Vector], float],
             for i in range(len(v))]
 
 import random
-from ml.linear_algebra import distance, add, scalar_multiply
+from linear_algebra import distance, add, scalar_multiply
 
 def gradient_step(v: Vector, gradient: Vector, step_size: float) -> Vector:
     """Moves `step_size` in the `gradient` direction from `v`"""
@@ -105,7 +105,7 @@ def main():
     
     # First "Using Gradient Descent to Fit Models" example
     
-    from ml.linear_algebra import vector_mean
+    from linear_algebra import vector_mean
     
     # Start with random values for slope and intercept.
     theta = [random.uniform(-1, 1), random.uniform(-1, 1)]
