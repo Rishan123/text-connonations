@@ -1,5 +1,4 @@
-import linear_algebra
-
+from algebra import Vector, Dot
 def step_function(x: float) -> float:
     return 1.0 if x >= 0 else 0.0
 
